@@ -378,7 +378,28 @@ const doubledSalary = nameOfWorkers
   .forEach(salary => console.log(salary));
 
 //Assignment 2
+
 const arrayFunction = arr => {
   return `First element: ${arr[0]}, Last element: ${arr[arr.length - 1]} `;
 };
 console.log(arrayFunction([1, 2, 3, 4, 5]));
+
+const objectFunction = obj => {
+  return `Your name is ${obj.firstname} ${
+    obj.lastName
+  }, you are a ${obj.gender.toLowerCase()} and your current salary is $${
+    obj.salary
+  }.`;
+};
+console.log(
+  objectFunction({
+    firstname: 'Walter',
+    lastName: 'Hamilton',
+    gender: 'Male',
+    age: 25,
+    salary: 117408
+  })
+);
+
+const nameAndScore = (name, score) => `Hello ${name}, your score is ${score}`;
+console.log(nameAndScore('Teni', 500));
