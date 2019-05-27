@@ -402,4 +402,5 @@ console.log(
 );
 
 const nameAndScore = (name, score) => `Hello ${name}, your score is ${score}`;
+ 
 console.log(nameAndScore('Teni', 500));
